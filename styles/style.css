@@ -1,0 +1,42 @@
+:root {
+    --clr-dark: #000;
+    --clr-light: #fff;
+    --clr-bg: #121212;
+    --clr-gray: #2a2a2a;
+    --clr_lightgray: #b3b3b3;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    line-height: calc(1em + 0.5rem);
+}
+
+body {
+    min-height: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /*background-color: var(--clr-dark);*/
+    color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background: none;
+    columns: inherit;
+    cursor: pointer;
+}
