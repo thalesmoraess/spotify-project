@@ -1,0 +1,133 @@
+.main {
+    overflow-y: scroll;
+}
+
+.sidebar {
+    background-color: var(--clr-bg);
+    display: none;
+}
+
+.home {
+    background-color: var(--clr-bg);
+    padding-block: 1rem;
+}
+
+.home__section--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.home__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.home__section--title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding-inline: 1rem;
+}
+
+.home__list {
+    display: flex;
+    list-style: none;
+    padding-inline: 0.5rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.home__list::-webkit-scrollbar {
+    display: none;
+}
+
+.home__list--item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    flex-shrink: 0;
+    padding-inline: 0.35rem;
+    padding-block: 0.5rem;
+    border-radius: 6px;
+}
+
+.home__list--item:hover {
+    background-color: var(--clr-gray);
+}
+
+.home__list--img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.home__list--title {
+    font-size: 0.875rem;
+}
+
+@media (width >= 768px) {
+    .home {
+        padding-block: 1.5rem;
+    }
+
+    .home__section--title {
+        font-size: 1.25rem;
+    }
+
+    .home__list--item {
+        padding-inline: 0.5rem;
+    }
+
+    .home__list--img {
+        width: 10rem;
+        height: 10rem; 
+    }
+}
+
+@media (width >= 1024px) {
+    .main {
+        display: grid;
+        grid-template-columns: min(25vw, 350px) 1fr;
+        gap: 0.5rem;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .home__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .home__list--img {
+        width: initial;
+        height: initial;
+    }
+
+    .home__list--item:nth-child(5), .home__list--item:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (width >= 1280px) {
+    .home__list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .home__list--item:nth-child(5) {
+        display: flex;
+    }
+}
+
+@media (width >= 1536px) {
+    .home__list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .home__list--item:nth-child(6) {
+        display: flex;
+    }
+}

@@ -10,34 +10,161 @@
         rel="stylesheet">
     <title>Spotify</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/components/layout.css">
     <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/main.css">
 </head>
 <body>
-    <header class="header">
-            <a class="header__logo" href="#"></a>
-            <form class="header__search">
-                <label class="header__search--label" for="search">
-                    <svg class="header__search--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <div class="layout">
+        <header class="header">
+                <a class="header__logo" href="#"></a>
+                <form class="header__search">
+                    <label class="header__search--label" for="search">
+                        <svg class="header__search--icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                        <input class="header__search--input" type="search" id="search" placeholder="O que você quer ouvir?">
+                    </label>
+                </form>
+                <div class="header__actions">
+                    <button class="header__button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>
-                    <input class="header__search--input" type="search" id="search" placeholder="O que você quer ouvir?">
-                </label>
-            </form>
-            <div class="header__actions">
-                <button class="header__button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                  </svg>
-                  </button>
-                <a class="header__link" href="#">Abrir app</a>
-                <button class="header__button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                  </button>
+                    </svg>
+                    </button>
+                    <a class="header__link" href="#">Abrir app</a>
+                    <button class="header__button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    </button>
+                </div>
+                <div class="header__signup">
+                    <a class="header__link--signup" href="">Cadastrar</a>
+                    <a class="header__link" href="">Login</a>
+                </div>
+        </header>
+        <main class="main">
+            <div class="sidebar"></div>
+            <div class="home">
+                <div class="home__section--container">
+                    <section class="home__section">
+                    <h2 class="home__section--title">Artistas populares</h2>
+                        <ul class="home__list">
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover1.jpg" alt="">
+                            <h3 class="home__list--title">Eminem</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover3.jpg" alt="">
+                            <h3 class="home__list--title">Marshmello</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="home__section">
+                        <h2 class="home__section--title">Artistas populares</h2>
+                        <ul class="home__list">
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover1.jpg" alt="">
+                            <h3 class="home__list--title">Eminem</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover3.jpg" alt="">
+                            <h3 class="home__list--title">Marshmello</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="home__section">
+                        <h2 class="home__section--title">Artistas populares</h2>
+                            <ul class="home__list">
+                                <li class="home__list--item">
+                                <img class="home__list--img" src="images/cover1.jpg" alt="">
+                                <h3 class="home__list--title">Eminem</h3>
+                                </li>
+                                <li class="home__list--item">
+                                <img class="home__list--img" src="images/cover2.jpg" alt="">
+                                <h3 class="home__list--title">The Weeknd</h3>
+                                </li>
+                                <li class="home__list--item">
+                                <img class="home__list--img" src="images/cover3.jpg" alt="">
+                                <h3 class="home__list--title">Marshmello</h3>
+                                </li>
+                                <li class="home__list--item">
+                                <img class="home__list--img" src="images/cover2.jpg" alt="">
+                                <h3 class="home__list--title">The Weeknd</h3>
+                                </li>
+                                <li class="home__list--item">
+                                <img class="home__list--img" src="images/cover2.jpg" alt="">
+                                <h3 class="home__list--title">The Weeknd</h3>
+                                </li>
+                                <li class="home__list--item">
+                                <img class="home__list--img" src="images/cover2.jpg" alt="">
+                                <h3 class="home__list--title">The Weeknd</h3>
+                                </li>
+                            </ul>
+                    </section>
+                    <section class="home__section">
+                        <h2 class="home__section--title">Artistas populares</h2>
+                        <ul class="home__list">
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover1.jpg" alt="">
+                            <h3 class="home__list--title">Eminem</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover3.jpg" alt="">
+                            <h3 class="home__list--title">Marshmello</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                            <li class="home__list--item">
+                            <img class="home__list--img" src="images/cover2.jpg" alt="">
+                            <h3 class="home__list--title">The Weeknd</h3>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </div>
-            <div class="header__signup">
-                <a class="header__link--signup" href="">Cadastrar</a>
-                <a class="header__link" href="">Login</a>
-            </div>
-    </header>
+        </main>
+    </div>
 </body>
 </html>
